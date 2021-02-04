@@ -1,0 +1,85 @@
+{
+    "thimos":[
+        {
+            "id":1,
+            "group":"a",
+            "proverb":"Agikuyu moi kuhitha ndia, matiui kuhitha uhoro.",
+            "translation":"The Kikuyu know how to conceal their quiver, but donot know how to conceal their secrets.",
+            "note":"The Kikuyu, though very clever in concealing their arms, cannot keep secrets from the members of their tribe.",
+            "equivalent":""
+        },
+        {
+            "id":2,
+            "group":"a",
+            "proverb":"Ageni eri matiri utugire.",
+            "translation":"Two guests (at the same time) have no welcome.",
+            "note":"",
+            "equivalent":""
+        },
+        {
+            "id":3,
+            "group":"a",
+            "proverb":"Ageni eri na karirui kao.",
+            "translation":"Two guests love a different song.",
+            "note":"When you receive two visitors at the same time, you cannot treat them in the same manner because they have different tastes.",
+            "equivalent":"Every man has his hobby horse."
+        },
+        {
+            "id":4,
+            "group":"a",
+            "proverb":"Aikaragia mbia ta njuu ngigi.",
+            "translation":"He is a man that looks after many as ‘njuu’ looks after locusts.",
+            "note":"'Njuu' is a bird which accompanies migrating locusts to feed on them",
+            "equivalent":"Much wants more."
+        },
+        {
+            "id":5,
+            "group":"a",
+            "proverb":"Aka eri ni nyungu igiri cia urogi.",
+            "translation":"Two wives are two pots full of poison",
+            "note":"The more women you have in your house, the more troubles you must expect.",
+            "equivalent":"Women's jars breed men's wars."
+        },
+        {
+            "id":6,
+            "group":"a",
+            "proverb":"Aka matiri cia ndiiro no cia nyiniko.",
+            "translation":"Women have no upright words, but only crooked ones.",
+            "note":"The Kikuyu use the proverb to say that women keep no secrets and seldom tell the truth.",
+            "equivalent":"Women conceal all that they know not."
+        },
+        {
+            "id":7,
+            "group":"a",
+            "proverb":"Aka na ng'ombe itiri ndugu",
+            "translation":"Wives and oxen have no friends.",
+            "note":"There are things which are not to be given to friends.",
+            "equivalent":"A woman is to be from her house three times: when she is christened, married, and buried."
+        },
+        {
+            "id":8,
+            "group":"a",
+            "proverb":"Andu maiganaine magithii na magiceera.",
+            "translation":"People who have not secret agreement are beaten by a single club.",
+            "note":"One can notice a difference between man and man when they, ‘exemplify Gratia’ are commanding or working, but not on the road where they look quite the same.",
+            "equivalent":""
+        },
+        {
+            "id":9,
+            "group":"a",
+            "proverb":"Andu matari ndundu mahuragwo na njuguma imwe.",
+            "translation":"People who have not secret agreement are beaten by a single club.",
+            "note":"A group of men not bound by a secret will be easily beaten by a single man.",
+            "equivalent":"Lack of union spells weakness."
+        },
+        {
+            "id":10,
+            "group":"a",
+            "proverb":"Andu matiui ngamini.",
+            "translation":"Men do not know liberality.",
+            "note":"One does not give without hope of return.",
+            "equivalent":""
+        }
+        
+    ]
+}
