@@ -1,10 +1,7 @@
 import React from 'react'
 import {View, Text, StyleSheet, Image, Dimensions} from 'react-native'
 const {width} = Dimensions.get('window');
-import {
-    DrawerContentScrollView,
-    DrawerItemList,
-  } from '@react-navigation/drawer';
+import {DrawerContentScrollView,DrawerItemList } from '@react-navigation/drawer';
 import Animated from 'react-native-reanimated';
 
 const DrawerContent = (props) => {
@@ -24,7 +21,7 @@ const DrawerContent = (props) => {
                
                 <Text>Gikuyu Kirume nyambo</Text>
             </View>
-      <DrawerItemList {...props} labelStyle={{color:"#331a00", fontSize:15, fontWeight:'800', fontFamily:'Roboto'}} activeTintColor="#ffaa80"/>
+      <DrawerItemList {...props} labelStyle={{color:"#331a00", fontSize:15, fontWeight:'800', fontFamily:'Roboto'}} activeTintColor="#ffaa80" />
       </Animated.View>
     </DrawerContentScrollView>
        </View>

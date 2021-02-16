@@ -11,7 +11,7 @@ import Share from 'react-native-share';
 const screenWidth = Math.round(Dimensions.get('window').width);
 
 
-const Card = ({thimo, translate, proverbId}) => {
+const Card = ({thimo, translate}) => {
     const viewRef = useRef();
     const getPermissionAndroid = async () => {
         try {
@@ -50,9 +50,9 @@ const Card = ({thimo, translate, proverbId}) => {
             });
     }
 
-    const addToFav = (proverbId)=>{
+    const addToFav = ()=>{
         Toast.show({
-            text1: 'Added to favourite' + proverbId,
+            text1: 'Added to favourite',
             type:'success',
             visibilityTime: 1000,
           });
@@ -108,7 +108,7 @@ const Card = ({thimo, translate, proverbId}) => {
         <View style={styles.Card}>
 
             <View style={styles.cardContent} ref={viewRef}>
-                <Text style={styles.cardText}>{thimo}</Text>
+                <Text style={styles.cardText}>Favourite thimo</Text>
             </View>
 
             <View style={{flexDirection:"row", justifyContent:"space-between", marginTop:5, width:"100%", padding:5}}>
@@ -133,11 +133,11 @@ const Card = ({thimo, translate, proverbId}) => {
                <TouchableOpacity style={{ width:"25%", padding:5,}} 
                 onPress={
                     ()=>{
-                       addToFav(proverbId)
+                       addToFav()
                     }
                 }
                 >
-                <Fontisto color="white" size={20} name="heart" style={{alignSelf:"center"}} />
+                <Icon color="white" size={20} name="trash" style={{alignSelf:"center"}} />
                 </TouchableOpacity>
                 
             </View>

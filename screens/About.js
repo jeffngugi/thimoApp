@@ -1,14 +1,25 @@
 import React from 'react';
-import {Text, View} from 'react-native';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {Text, View, StyleSheet} from 'react-native';
+import { createStackNavigator } from '@react-navigation/stack';
+import Header from '../components/Header';
 
-const Tab = createBottomTabNavigator();
+const Stack = createStackNavigator();
 
-const About = ()=> {
+
+const About = ({navigation})=> {
     return(
+        <>
+         <Header navigation={navigation} heading='About the developer'/>
         <View>
-            <Text>About Screen goes here</Text>
+           
+            <Text>About the d goes heresdr</Text>
         </View>
+        </>
     )
 }
+
+
+const styles = StyleSheet.create({
+    
+})
 export default About

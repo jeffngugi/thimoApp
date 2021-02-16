@@ -1,0 +1,56 @@
+
+
+{
+    "thimos":[
+        {
+            "id":1,
+            "proverb":"Agikuyu moi kuhitha ndia, matiui kuhitha uhoro.",
+            "translation":"The Kikuyu know how to conceal their quiver, but donot know how to conceal their secrets.",
+            "note":"The Kikuyu, though very clever in concealing their arms, cannot keep secrets from the members of their tribe.",
+            "equivalent":""
+        },
+        {
+            "id":30,
+            "proverb":"Cira munene ni wa uthoni ugikua",
+            "translation":"The breaking of a betrothal is no small matter.",
+            "note":"Marrying a girls means giving a large number of goats or cattle to her family. Starting from the day of the betrothal the price is paid gradually. Evidently it is no simple matter if the would-be husband breaks his contract and demands the return of the marriage price.",
+            "equivalent":""
+        },
+        {
+            "id":5,
+            "proverb":"Aka eri ni nyungu igiri cia urogi.",
+            "translation":"Two wives are two pots full of poison",
+            "note":"The more women you have in your house, the more troubles you must expect.",
+            "equivalent":"Women's jars breed men's wars."
+        },
+        {
+            "id":68,
+            "proverb":"Guceera ni kuhiga",
+            "translation":"Traveling is learning.",
+            "note":"",
+            "equivalent":"The world is a great book, of which they that never stir read only one page."
+        },
+        {
+            "id":157,
+            "proverb":"Huni nene igiraga huhita",
+            "translation":"To eat much leaves you with a swollen belly.",
+            "note":"",
+            "equivalent":"Enough is as good as a feast."
+        },
+        {
+            "id":161,
+            "proverb":"Igitunywo mwana iikagirio mungu",
+            "translation":"The cow is given a present when her calf is carried away.",
+            "note":"",
+            "equivalent":"When one thing distresses you, another consoles you."
+        },
+        {
+            "id":222,
+            "proverb":"Kaara kamwe gatingiyuragira ndaa",
+            "translation":"One finger does not kill a louse.",
+            "note":"",
+            "equivalent":"Union is strength."
+        }
+        
+    ]
+}

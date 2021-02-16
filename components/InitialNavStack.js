@@ -4,6 +4,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import DrawerContent from "./DrawerContent";
 import Home from '../screens/Home';
 import About from '../screens/About';
+import AboutDev from '../screens/AboutDev';
 
 const Drawer = createDrawerNavigator();
 
@@ -16,15 +17,17 @@ const InitialNavStack = () => {
             drawerStyle={{
                 backgroundColor: '#fff5e6'
             }}
+            
             screenOptions={{
-                headerShown:true,
+                headerShown:false,
+                headerTintColor:'#663300'
                 
             }}
         >
-            <Drawer.Screen name="Mucii" component={Home} options={{title:"Mucii"}}/>
+            <Drawer.Screen name="Mucii" component={Home}/>
             <Drawer.Screen name="Wigii" component={About} />
-            <Drawer.Screen name="Jeff" component={About} />
-            <Drawer.Screen name="Ngugi" component={About} />
+            <Drawer.Screen name="Developer" component={AboutDev} />
+            <Drawer.Screen name="About" component={About} />
         </Drawer.Navigator>
     )
 }

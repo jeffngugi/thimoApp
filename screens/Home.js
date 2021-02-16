@@ -1,21 +1,26 @@
 import React from 'react'
-import {Text, View} from 'react-native';
-
+import Icon from 'react-native-vector-icons/FontAwesome5';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import Thimos from '../jsons/thimos.json';
+import Favourite from './favourite/Favourites';
+import HomeStack from './HomeStack';
+import HomeScreen from './HomeScreen';
+import Fontisto from "react-native-vector-icons/Fontisto";
 
 const Tab = createBottomTabNavigator();
 
 
 const Home = ()=> {
+    
     return(
+      <>
+      {/* <Header /> */}
         <Tab.Navigator
-        initialRouteName={HomeScreen}
+        initialRouteName={HomeStack}
         tabBarOptions={{
             activeTintColor:'#992600',
             inactiveTintColor:'grey',
             style:{
-              backgroundColor:'white',
+              backgroundColor:'#fff5e6',
               borderTopWidth:0,
               shadowColor:'black',
               shadowOpacity:0.5,
@@ -26,36 +31,34 @@ const Home = ()=> {
           }}
         
         >
-      <Tab.Screen name="Home" component={HomeScreen} />
-      <Tab.Screen name="Alphabetical" component={Alphabetical} />
-      <Tab.Screen name="Favourites" component={SettingsScreen} />
+      
+      <Tab.Screen name="HomeScreen" component={HomeStack} 
+        options={{
+          tabBarLabel:'HOME',
+          tabBarIcon:({color, size})=>(
+            <Icon name="home" color={color} size={size}/>
+          )
+        }}
+      />
+      <Tab.Screen name="Favourites" component={Favourite} 
+        options={{
+          tabBarLabel:'FAVOUTIRE',
+          tabBarIcon:({color, size})=>(
+            <Fontisto color={color} size={size} name="heart" style={{alignSelf:"center"}} />
+          )
+        }}
+      />
     </Tab.Navigator>
+    </>
     )
 }
 
 
-const HomeScreen = ()=> {
-    return(
-        <View>
-            <Text>Home Screen goes herer</Text>
-        </View>
-    )
-}
 
 
-const SettingsScreen = ()=> {
-    return(
-        <View>
-            <Text>Setting Screen</Text>
-        </View>
-    )
-}
 
-const Alphabetical = ()=> {
-    return(
-        <View>
-            <Text>Order in alpabets</Text>
-        </View>
-    )
-}
+
+
+
+
 export default Home
