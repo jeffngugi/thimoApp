@@ -1,4 +1,4 @@
-import React, {useRef}  from 'react';
+import React, {useRef, useState}  from 'react';
 import {View,SafeAreaView,PermissionsAndroid,Alert,Platform,ScrollView,StatusBar, Text, StyleSheet, TouchableOpacity, Dimensions} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import Fontisto from "react-native-vector-icons/Fontisto";
@@ -7,12 +7,14 @@ import Toast from 'react-native-toast-message';
 import {captureRef} from 'react-native-view-shot';
 import CameraRoll from '@react-native-community/cameraroll';
 import Share from 'react-native-share';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const screenWidth = Math.round(Dimensions.get('window').width);
-
+const STORAGEKEY= '@save_proverb';
 
 const Card = ({thimo, translate, proverbId}) => {
     const viewRef = useRef();
+    const [fav, setFav] = useState({});
     const getPermissionAndroid = async () => {
         try {
           const granted = await PermissionsAndroid.request(
@@ -50,12 +52,20 @@ const Card = ({thimo, translate, proverbId}) => {
             });
     }
 
-    const addToFav = (proverbId)=>{
-        Toast.show({
-            text1: 'Added to favourite' + proverbId,
-            type:'success',
-            visibilityTime: 1000,
-          });
+    const addToFav = async (proverbId, thimo, translate)=>{
+      setFav({proverbId, thimo, translate})
+      try {
+        const jsonValue = JSON.stringify(fav)
+        await AsyncStorage.setItem(STORAGEKEY, jsonValue)
+      }catch(e){
+
+      }
+       
+        // Toast.show({
+        //     text1: 'Added to favourite' + proverbId,
+        //     type:'success',
+        //     visibilityTime: 1000,
+        //   });
     }
 
     const downloadImage = async () => {
@@ -133,7 +143,7 @@ const Card = ({thimo, translate, proverbId}) => {
                <TouchableOpacity style={{ width:"25%", padding:5,}} 
                 onPress={
                     ()=>{
-                       addToFav(proverbId)
+                       addToFav(proverbId, thimo, translate)
                     }
                 }
                 >
